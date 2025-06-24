@@ -229,3 +229,26 @@ app:
 **RecyclerView** - Это тоже **ListView**, но с улучшенной адаптивностью и расширяемостью.
 #### Работа с графикой и изображениями
 
+**Drawables** - папка с ресурсами(изображения разных форматов `.png`, `.jpeg`, `.gif`, `webp` ). Находящаяся в res`/drawables`.
+Изображения их этой папки могут быть отображены на `.xml` через **ImageView** 
+
+**Пример** `.xml`
+
+```xml
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/one" />
+```
+
+Способ поставить изображение фоном `android:background="@drawable/one "`
+
+
+
+**Пример** `.java`
+
+```java
+ImageView imageView = findViewById(R.id.myImageView);
+imageView.setImageResource(R.drawable.one);
+```
+
