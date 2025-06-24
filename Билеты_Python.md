@@ -321,7 +321,7 @@ list_a = ["value", "Max", "I`m sigma"]
 
 if value in list_a:
 
-	print(Max)
+	print(True)
 ```
 
 ### append() и extend()
